@@ -1,3 +1,5 @@
+# Pre-existing ignores
+
 blob-store
 compile-cache
 dev
@@ -5,6 +7,9 @@ storage
 .apm
 .node-gyp
 .npm
+
+# Custom ignores
+
 packages
 recovery
 github.cson

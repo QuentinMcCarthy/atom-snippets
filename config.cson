@@ -1,0 +1,18 @@
+"*":
+  "browser-refresh-on-save":
+    chromeCanary: false
+    safari: false
+    scripts:
+      css: "location.reload()"
+      styl: "location.reload()"
+    vivaldi: false
+  core:
+    telemetryConsent: "no"
+  editor:
+    tabLength: 4
+    tabType: "hard"
+  "emmet-atom": {}
+  "exception-reporting":
+    userId: "83344f66-6867-41b1-b783-9787b85601d8"
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,74 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.text.html.basic':
+  'jQuery CDN':
+    'prefix': 'jquery'
+    'body': """
+		<!--<script src="${1:../node_modules/jquery/dist/jquery.min.js}"></script>-->
+		<script src="${2:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>$3
+	"""
+  'Script tag':
+    'prefix': 'script'
+    'body': """
+		<script${1: src="${2:js/js.js}"}>$3</script>
+	"""
+  'Link tag':
+    'prefix': 'link'
+    'body': """
+		<link rel="stylesheet" href="${1:css/master.css}">$2
+	"""
+  'Style tag':
+    'prefix': 'style'
+    'body': """
+		<style>
+			$1
+		</style>
+	"""
+  'Div tag':
+    'prefix': 'div'
+    'body': """
+		<div${1: id="$2"}>$3</div>
+	"""
+
+'.source.js':
+  'jQuery Click Event':
+    'prefix': 'jqclick'
+    'body': """
+		$("$1").click(function(){
+			$2
+		});$3
+	"""
+  'jQuery Ready Event':
+    'prefix': 'jqready'
+    'body': """
+		$(${1:document}).ready(function(){
+			$2
+		});$3
+	"""
+  'JS Function':
+    'prefix': 'func'
+    'body': """
+		function $1($2){
+			$3
+		}
+	"""

@@ -7,9 +7,6 @@
       styl: "location.reload()"
     vivaldi: false
   core:
-    disabledPackages: [
-      "browser-refresh-on-save"
-    ]
     telemetryConsent: "no"
     uriHandlerRegistration: "always"
   editor:

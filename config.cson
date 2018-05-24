@@ -10,6 +10,7 @@
     telemetryConsent: "no"
     uriHandlerRegistration: "always"
   editor:
+    showIndentGuide: true
     tabLength: 4
     tabType: "hard"
   "emmet-atom": {}

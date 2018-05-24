@@ -13,7 +13,6 @@
     showIndentGuide: true
     tabLength: 4
     tabType: "hard"
-  "emmet-atom": {}
   "exception-reporting":
     userId: "83344f66-6867-41b1-b783-9787b85601d8"
   welcome:

@@ -86,6 +86,13 @@
 			$2
 		});$3
 	"""
+  'jQuery Event Syntax':
+    'prefix': 'jqevent'
+    'body': """
+		$($1).${2:event}(function(){
+			$3
+		});$4
+	"""
   'JS Function':
     'prefix': 'func'
     'body': """

@@ -25,15 +25,13 @@
     'prefix': 'jquery'
     'body': """
 		<!-- jQuery -->
-		<!-- <script src="${1:../node_modules/jquery/dist/jquery.min.js}"></script> -->
-		<script src="${2:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>$3
+		<script src="${1:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>$2
 	"""
   'Bootstrap CDN':
     'prefix': 'bootstrap'
     'body': """
 		<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" href="${1:../node_modules/bootstrap/dist/css/bootstrap.min.css}"> -->
-		<link rel="stylesheet" href="${2:https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css}">$3
+		<link rel="stylesheet" href="${1:https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css}">$2
 	"""
   'Bootstrap JS CDN':
     'prefix': 'bootstrapjs'
@@ -87,6 +85,13 @@
 		$(${1:document}).ready(function(){
 			$2
 		});$3
+	"""
+  'jQuery Event Syntax':
+    'prefix': 'jqevent'
+    'body': """
+		$($1).${2:event}(function(){
+			$3
+		});$4
 	"""
   'JS Function':
     'prefix': 'func'

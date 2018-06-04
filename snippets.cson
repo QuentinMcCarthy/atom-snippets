@@ -119,3 +119,10 @@
 			${4:Array}[i]$5
 		}
 	"""
+  'JS sort method':
+    'prefix': 'for'
+    'body': """
+		${1:Array}.sort(${2:function(a,b){
+			return ${3:a-b}
+		}});$4
+	"""

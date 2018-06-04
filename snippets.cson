@@ -129,6 +129,5 @@
   'JS random number':
     'prefix': 'randint'
     'body': """
-		// Generates a random number between {3:0} and ${4:100}
 		${1:var ${2:randInt} = }Math.floor(${3:0} + (Math.random() * ${4:100}));$5
 	"""

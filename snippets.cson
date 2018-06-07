@@ -56,11 +56,13 @@
   'Script tag':
     'prefix': 'script'
     'body': """
+		<!-- Custom JS -->
 		<script${1: src="${2:js/js.js}"}>$3</script>
 	"""
   'Link tag':
     'prefix': 'link'
     'body': """
+		<!-- Custom CSS -->
 		<link rel="stylesheet" href="${1:css/master.css}">$2
 	"""
   'Style tag':

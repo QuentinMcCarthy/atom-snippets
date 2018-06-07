@@ -1,4 +1,5 @@
-# Pre-existing ignores
+#	Blacklist
+##	Pre-existing ignores
 
 blob-store
 compile-cache
@@ -8,10 +9,10 @@ storage
 .node-gyp
 .npm
 
-# Custom ignores
+##	Custom ignores
 
-packages
-recovery
+packages/
+recovery/
 github.cson
 init.coffee
 keymap.cson

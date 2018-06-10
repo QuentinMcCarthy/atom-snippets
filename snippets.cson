@@ -79,7 +79,6 @@
   'Script tag':
     'prefix': 'script'
     'body': """
-		<!-- Custom JS -->
 		<script${1: src="${2:js/js.js}"}>$3</script>
 	"""
 #	Content tags

@@ -20,6 +20,8 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+
+# HTML
 '.text.html.basic':
 #	Core
   'Comments':
@@ -88,7 +90,14 @@
 			$3
 		</div>
 	"""
+  'FontAwesome Icon Tag':
+    'prefix': 'i'
+    'body': """
+		<i class="${1:fas} $2"></i>$3
+	"""
 
+
+# JS
 '.source.js':
 #	Events
   'jQuery Click Event':

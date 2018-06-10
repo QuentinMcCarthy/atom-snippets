@@ -89,10 +89,11 @@
 			$3
 		</div>
 	"""
-  'FontAwesome Icon Tag':
-    'prefix': 'i'
+#	FontAwesome
+  'FontAwesome Chevrons':
+    'prefix': 'fachevrons'
     'body': """
-		<i class="${1:fas} $2"></i>$3
+		<i class="fas fa-chevron-${1:(left,right)}"></i>$3
 	"""
 
 

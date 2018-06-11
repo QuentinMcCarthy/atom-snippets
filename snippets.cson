@@ -36,6 +36,19 @@
 		<!-- jQuery -->
 		<script src="${1:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>$2
 	"""
+  'jQuery UI CSS CDN':
+    'prefix': 'jqui'
+    'body': """
+		<!-- jQuery UI -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css">
+	"""
+  'jQuery UI JS CDN':
+    'prefix': 'jquijs'
+    'body': """
+		<!-- jQuery UI -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	"""
   'Bootstrap CSS CDN':
     'prefix': 'bootstrap'
     'body': """

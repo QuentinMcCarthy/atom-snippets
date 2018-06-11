@@ -78,7 +78,6 @@
   'Link tag':
     'prefix': 'link'
     'body': """
-		<!-- Custom CSS -->
 		<link rel="stylesheet" href="${1:css/master.css}">$2
 	"""
   'Style tag':

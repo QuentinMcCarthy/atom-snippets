@@ -149,14 +149,13 @@
   'jQuery Ajax':
     'prefix': 'jqajax'
     'body': """
-		$.getJSON("$1",
-			function(data){
-				for(var i = 0; i < data.length; i++){
-					${2:items}.push(data[i]);
-				}
-			}).done(function(data){
-				$3
-			});$4
+		$.getJSON("$1", function(data){
+			for(var i = 0; i < data.length; i++){
+				${2:items}.push(data[i]);
+			}
+		}).done(function(data){
+			$3
+		});$4
 	"""
   'JS Function':
     'prefix': 'func'

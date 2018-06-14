@@ -172,6 +172,17 @@
 			$2
 		}
 	"""
+  'JS switch':
+    'prefix': 'switch'
+    'body': """
+		switch(${1:expression}){
+			case ${2:expression}:
+				$3
+				break;
+			default:
+				$4
+		};$5
+	"""
 #	Methods
   'JS sort method':
     'prefix': 'sort'

@@ -191,6 +191,13 @@
 			return ${3:a-b}
 		}});$4
 	"""
+  'JS forEach method':
+    'prefix': 'foreach'
+    'body': """
+		${1:Array}.forEach(function(currentValue,index){
+			$2
+		});
+	"""
 #	Other
   'JS random number':
     'prefix': 'randint'

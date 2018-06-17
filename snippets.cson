@@ -121,6 +121,99 @@
 	"""
 
 
+# Pug
+'.source.pug':
+#	CDN's
+  'jQuery JS CDN':
+    'prefix': 'jquery'
+    'body': """
+		// jQuery
+		script(src="${1:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}")$2
+	"""
+  'jQuery UI CSS CDN':
+    'prefix': 'jqui'
+    'body': """
+		// jQuery UI
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css")
+	"""
+  'jQuery UI JS CDN':
+    'prefix': 'jquijs'
+    'body': """
+		// jQuery UI
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+	"""
+  'Bootstrap CSS CDN':
+    'prefix': 'bootstrap'
+    'body': """
+		// Bootstrap
+		link(rel="stylesheet", href="${1:https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css}")$2
+	"""
+  'Bootstrap JS CDN':
+    'prefix': 'bootstrapjs'
+    'body': """
+		// Bootstrap JS
+		${1:script(src="${2:https://code.jquery.com/jquery-3.3.1.slim.min.js}", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")}
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js", integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", crossorigin="anonymous")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js", integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T", crossorigin="anonymous")$3
+	"""
+  'Fontawesome CSS CDN':
+    'prefix': 'fontawesome'
+    'body': """
+		// FontAwesome
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+	"""
+  'Fontawesome JS CDN':
+    'prefix': 'fontawesomejs'
+    'body': """
+		// FontAwesome
+		script(defer, src="https://use.fontawesome.com/releases/v5.0.13/js/all.js", integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe", crossorigin="anonymous")
+	"""
+  'Mapbox CSS CDN':
+    'prefix': 'mapbox'
+    'body': """
+		// mapbox
+		link(href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css", rel="stylesheet")
+	"""
+  'Mapbox JS CDN':
+    'prefix': 'mapboxjs'
+    'body': """
+		// mapbox
+		script(src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js")
+	"""
+#	Source tags
+  'Link tag':
+    'prefix': 'link'
+    'body': """
+		link(rel="stylesheet", href="${1:css/master.css}")$2
+	"""
+  'Style tag':
+    'prefix': 'style'
+    'body': """
+		style
+			| $1
+	"""
+  'Script tag':
+    'prefix': 'script'
+    'body': """
+		script${1:( src="${2:js/js.js}")}
+			| $3
+	"""
+#	Content tags
+  'Div tag':
+    'prefix': 'div'
+    'body': """
+		div${1:(class="$2")}
+			| $3
+	"""
+#	FontAwesome
+  'FontAwesome Chevrons':
+    'prefix': 'fachevrons'
+    'body': """
+		i(class="fas fa-chevron-${1:(left,right)}")$3
+	"""
+
+
 # JS
 '.source.js':
 #	Events

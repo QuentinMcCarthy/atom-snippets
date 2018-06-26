@@ -79,7 +79,7 @@
     'prefix': 'mapbox'
     'body': """
 		<!-- mapbox -->
-		<link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css'>
 	"""
   'Mapbox JS CDN':
     'prefix': 'mapboxjs'
@@ -188,7 +188,7 @@
     'prefix': 'mapbox'
     'body': """
 		// mapbox
-		link(href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css", rel="stylesheet")
+		link(rel="stylesheet", href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css")
 	"""
   'Mapbox JS CDN':
     'prefix': 'mapboxjs'

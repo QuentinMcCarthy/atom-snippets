@@ -123,6 +123,21 @@
 
 # Pug
 '.source.pug':
+#	Core
+  'HTML Template':
+    'prefix': 'html'
+    'body': """
+		<!DOCTYPE html>
+		html(lang="${1:en}" dir="${2:ltr}")
+			head
+				meta(charset="utf-8")
+
+		    	title
+					| $3
+
+			body
+				$4
+	"""
 #	CDN's
   'jQuery JS CDN':
     'prefix': 'jquery'

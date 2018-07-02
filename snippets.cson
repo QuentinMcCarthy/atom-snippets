@@ -290,6 +290,16 @@
 				$4
 		};$5
 	"""
+  'JS try':
+    'prefix': 'try'
+    'body': """
+		try {
+			$1
+		}
+		catch(err){
+			$2
+		}$3
+	"""
 #	Methods
   'JS sort method':
     'prefix': 'sort'

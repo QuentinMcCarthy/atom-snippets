@@ -103,7 +103,7 @@
   'Script tag':
     'prefix': 'script'
     'body': """
-		<script${1: src="${2:js/js.js}"}>$3</script>
+		<script${1: src="${2:js/script.js}"}>$3</script>
 	"""
 #	Content tags
   'Div tag':

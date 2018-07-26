@@ -87,6 +87,12 @@
 		<!-- mapbox -->
 		<script src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"></script>
 	"""
+  'Google Charts Loader JS CDN':
+    'prefix': 'gcharts'
+    'body': """
+		<!-- Google Charts -->
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+	"""
 #	Source tags
   'Link tag':
     'prefix': 'link'

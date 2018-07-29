@@ -353,6 +353,21 @@
 			$3
 		});$4
 	"""
+  'jQuery Ajax':
+    'prefix': 'jqajax'
+    'body': """
+		$.ajax({
+			type: "${1:GET}",
+			url: "$2",
+			dataType: "${3:json}",
+			success: function(data){
+				$4
+			},
+			error: function(err){
+				$5
+			}
+		})
+	"""
 #	Methods
   'JS sort':
     'prefix': 'sort'

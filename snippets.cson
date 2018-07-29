@@ -322,15 +322,46 @@
 			$3
 		}
 	"""
-#	Methods
-  'JS sort method':
+  'JS XHTTP':
+    'prefix': 'xhttp'
+    'body': """
+		var ${1:xhttp} = new XMLHttpRequest();
+		${1:xhttp}.onreadystatechange = function(){
+			${2:// xhttp.readyState
+			// 	0- "Request not initialised",
+			// 	1- "Server connection established",
+			// 	2- "Request recieved",
+			// 	3- "Processing the request",
+			// 	4- "Request finished, response ready"
+			// xhttp.status (https://en.wikipedia.org/wiki/list_of_HTTP_status_codes)
+			// 	200- OK
+			// 	403- Forbidden / need login
+			// 	404- Not found}
+
+			if(this.status == 403){
+				${3:console.log("XHTTP Request: 403 - Forbidden");}
+				return;
+			}else if(this.status == 404){
+				${4:console.log("XHTTP Request: 404 - Not Found");}
+				return;
+			}
+
+			if(this.status == 200 && this.readyState == 4){
+				${5:console.log("XHTTP Request: 200 - OK");
+				console.log(this.responseText);}
+			}
+		}
+		${1:xhttp}.open("${6:GET}", "$7", ${8:true});
+		${1:xhttp}.send($9);$10
+	"""
+  'JS sort':
     'prefix': 'sort'
     'body': """
 		${1:Array}.sort(${2:function(a,b){
 			return ${3:a-b}
 		}});$4
 	"""
-  'JS forEach method':
+  'JS forEach':
     'prefix': 'foreach'
     'body': """
 		${1:Array}.forEach(function(currentValue,index){

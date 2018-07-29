@@ -306,6 +306,22 @@
 			$2
 		}$3
 	"""
+  'JS if':
+    'prefix': 'if'
+    'body': """
+		if(${1:true}){
+			$2
+		}
+	"""
+  'JS if else':
+    'prefix': 'ife'
+    'body': """
+		if(${1:true}){
+			$2
+		}else{
+			$3
+		}
+	"""
 #	Methods
   'JS sort method':
     'prefix': 'sort'

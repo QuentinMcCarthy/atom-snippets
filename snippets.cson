@@ -344,13 +344,11 @@
 		${1:xhttp}.open("${6:GET}", "$7", ${8:true});
 		${1:xhttp}.send($9);$10
 	"""
-  'jQuery Ajax':
-    'prefix': 'jqajax'
+  'jQuery getJSON':
+    'prefix': 'jqjson'
     'body': """
 		$.getJSON("$1", function(data){
-			for(var i = 0; i < data.length; i++){
-				${2:items}.push(data[i]);
-			}
+			$2
 		}).done(function(data){
 			$3
 		});$4

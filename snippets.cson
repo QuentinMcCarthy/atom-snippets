@@ -364,9 +364,10 @@
 				$4
 			},
 			error: function(err){
-				$5
+				${5:console.log("Error "+err.status);
+				console.log(err);}
 			}
-		})
+		});
 	"""
 #	Methods
   'JS sort':

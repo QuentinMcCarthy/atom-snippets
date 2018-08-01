@@ -289,6 +289,13 @@
 			$3
 		}$4
 	"""
+  'JS iife':
+    'prefix': 'iife'
+    'body': """
+		(function(){
+			$1
+		}());$2
+	"""
 #	Events
   'jQuery Click Event':
     'prefix': 'jqclick'

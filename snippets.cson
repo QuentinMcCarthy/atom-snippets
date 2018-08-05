@@ -209,6 +209,19 @@
 		// mapbox
 		script(src="${1:https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js}")$2
 	"""
+  'Google Charts Loader JS CDN':
+    'prefix': 'gcharts'
+    'body': """
+		// Google Charts
+		script(src="${1:https://www.gstatic.com/charts/loader.js}")$2
+	"""
+  'Google Maps API JS CDN':
+    'prefix': 'gmaps'
+    'body': """
+		// Google Maps API
+		script(async, defer, src="${1:https://maps.googleapis.com/maps/api/js?key=$2}")$3
+    </script>
+	"""
 #	Source tags
   'Link tag':
     'prefix': 'link'

@@ -93,6 +93,13 @@
 		<!-- Google Charts -->
 		<script src="${1:https://www.gstatic.com/charts/loader.js}"></script>$2
 	"""
+  'Google Maps API JS CDN':
+    'prefix': 'gmaps'
+    'body': """
+		<!-- Google Maps API -->
+		<script async defer src="${1:https://maps.googleapis.com/maps/api/js?key=$2}"></script>$3
+    </script>
+	"""
 #	Source tags
   'Link tag':
     'prefix': 'link'

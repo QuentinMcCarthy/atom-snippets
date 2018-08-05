@@ -97,7 +97,7 @@
     'prefix': 'gmaps'
     'body': """
 		<!-- Google Maps API -->
-		<script async defer src="${1:https://maps.googleapis.com/maps/api/js?key=$2}"></script>$3
+		<script src="${1:https://maps.googleapis.com/maps/api/js?key=$2}"></script>$3
     </script>
 	"""
 #	Source tags
@@ -219,7 +219,7 @@
     'prefix': 'gmaps'
     'body': """
 		// Google Maps API
-		script(async, defer, src="${1:https://maps.googleapis.com/maps/api/js?key=$2}")$3
+		script(src="${1:https://maps.googleapis.com/maps/api/js?key=$2}")$3
     </script>
 	"""
 #	Source tags

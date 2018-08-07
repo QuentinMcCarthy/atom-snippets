@@ -374,7 +374,7 @@
 			url: "$2",
 			dataType: "${3:json}",
 			success: function(data){
-				$4
+				${4:console.log(data);}$5
 			},
 			error: function(err){
 				${5:console.log("Error "+err.status);

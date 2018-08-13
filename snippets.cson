@@ -29,6 +29,25 @@
     'body': """
 		<!-- $1 -->$2
 	"""
+  'HTML Template':
+    'prefix': 'html'
+    'body': """
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="utf-8">$1
+
+				<title>$2</title>$3
+
+				<link rel="stylesheet" href="${4:css/master.css}">$5
+			</head>
+			<body>
+				$8
+
+				<script src="${6:js/script.js}"></script>$7
+			</body>
+		</html>
+	"""
 #	CDN's
   'jQuery JS CDN':
     'prefix': 'jquery'

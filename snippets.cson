@@ -389,11 +389,11 @@
 			type: "${1:GET}",
 			url: "$2",
 			dataType: "${3:json}",
-			success: function(data){
-				${4:console.log(data);}$5
+			success: function(${4:data}){
+				${5:console.log(${4:data});}$6
 			},
 			error: function(err){
-				${5:console.log("Error "+err.status);
+				${7:console.log("Error "+err.status);
 				console.log(err);}
 			}
 		});

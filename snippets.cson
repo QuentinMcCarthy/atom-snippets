@@ -318,6 +318,11 @@
 			$1
 		}());$2
 	"""
+  'JS Require':
+    'prefix': 'req'
+    'body': """
+		const $1 = require("$1");
+	"""
 #	Events
   'jQuery Click Event':
     'prefix': 'jqclick'

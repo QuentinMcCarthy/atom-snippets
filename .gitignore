@@ -1,6 +1,5 @@
 #	Blacklist
 ##	Pre-existing ignores
-
 blob-store
 compile-cache
 dev
@@ -10,9 +9,9 @@ storage
 .npm
 
 ##	Custom ignores
-
 packages/
 recovery/
+.DS_Store
 github.cson
 init.coffee
 keymap.cson

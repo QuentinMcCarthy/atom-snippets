@@ -401,6 +401,13 @@
 			</body>
 		</html>
 	"""
+  'foreach':
+    'prefix': 'foreach'
+    'body': """
+		foreach (${1:$loop} as ${2:$loopItem}){
+			$3
+		}
+	"""
 #	CDN's
   'jQuery JS CDN':
     'prefix': 'jquery'

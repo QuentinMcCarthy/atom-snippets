@@ -380,6 +380,124 @@
 		<i class="fas fa-chevron-${1:(left,right)}"></i>$3
 	"""
 
+# PHP
+'.text.html.php':
+#	Core
+  'HTML Template':
+    'prefix': 'html'
+    'body': """
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="utf-8">$1
+				<title>$2</title>$3
+
+				<link rel="stylesheet" href="${4:css/master.css}">$5
+			</head>
+			<body>
+				$8
+
+				<script src="${6:js/script.js}"></script>$7
+			</body>
+		</html>
+	"""
+#	CDN's
+  'jQuery JS CDN':
+    'prefix': 'jquery'
+    'body': """
+		<!-- jQuery -->
+		<script src="${1:https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js}"></script>$2
+	"""
+  'jQuery UI CSS CDN':
+    'prefix': 'jqui'
+    'body': """
+		<!-- jQuery UI -->
+		<link rel="stylesheet" href="${1:https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css}">
+		<link rel="stylesheet" href="${2:https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css}">$3
+	"""
+  'jQuery UI JS CDN':
+    'prefix': 'jquijs'
+    'body': """
+		<!-- jQuery UI -->
+		<script src="${1:https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js}"></script>$2
+	"""
+  'Bootstrap CSS CDN':
+    'prefix': 'bootstrap'
+    'body': """
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="${1:https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">$2
+	"""
+  'Bootstrap JS CDN':
+    'prefix': 'bootstrapjs'
+    'body': """
+		<!-- Bootstrap JS-->
+		${1:<script src="${2:https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>}
+		<script src="${3:https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>$4
+		<script src="${5:https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js}" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>$6
+	"""
+  'Fontawesome CSS CDN':
+    'prefix': 'fontawesome'
+    'body': """
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.2.0/css/all.css}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">$2
+	"""
+  'Fontawesome JS CDN':
+    'prefix': 'fontawesomejs'
+    'body': """
+		<!-- FontAwesome -->
+		<script defer src="${1:https://use.fontawesome.com/releases/v5.0.13/js/all.js}" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>$2
+	"""
+  'Mapbox CSS CDN':
+    'prefix': 'mapbox'
+    'body': """
+		<!-- mapbox -->
+		<link rel="stylesheet" href="${1:https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css}">$2
+	"""
+  'Mapbox JS CDN':
+    'prefix': 'mapboxjs'
+    'body': """
+		<!-- mapbox -->
+		<script src="${1:https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js}"></script>$2
+	"""
+  'Google Charts Loader JS CDN':
+    'prefix': 'gcharts'
+    'body': """
+		<!-- Google Charts -->
+		<script src="${1:https://www.gstatic.com/charts/loader.js}"></script>$2
+	"""
+#	Source tags
+  'Link tag':
+    'prefix': 'link'
+    'body': """
+		<link rel="stylesheet" href="${1:css/master.css}">$2
+	"""
+  'Style tag':
+    'prefix': 'style'
+    'body': """
+		<style>
+			$1
+		</style>$2
+	"""
+  'Script tag':
+    'prefix': 'script'
+    'body': """
+		<script${1: src="${2:js/script.js}"}>$3</script>$4
+	"""
+#	Content tags
+  'Div tag':
+    'prefix': 'div'
+    'body': """
+		<div ${1:class="$2"}>
+			$3
+		</div>$4
+	"""
+#	FontAwesome
+  'FontAwesome Chevrons':
+    'prefix': 'fachevrons'
+    'body': """
+		<i class="fas fa-chevron-${1:(left,right)}"></i>$3
+	"""
+
 
 # JS
 '.source.js':

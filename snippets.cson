@@ -381,7 +381,7 @@
 	"""
 
 # PHP
-'.text.html.php':
+'.text.html.php, .source.php':
 #	Core
   'HTML Template':
     'prefix': 'html'

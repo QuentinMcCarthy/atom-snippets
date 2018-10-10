@@ -404,7 +404,7 @@
   'foreach':
     'prefix': 'foreach'
     'body': """
-		foreach (${1:$loop} as ${2:$loopItem}){
+		foreach($${1:loop} as $${2:loopItem}){
 			$3
 		}
 	"""

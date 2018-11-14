@@ -85,13 +85,13 @@
     'prefix': 'fontawesome'
     'body': """
 		<!-- FontAwesome -->
-		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.3.1/css/all.css}" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">$2
+		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.5.0/css/all.css}" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">$2
 	"""
   'Fontawesome JS CDN':
     'prefix': 'fontawesomejs'
     'body': """
 		<!-- FontAwesome -->
-		<script defer src="${1:https://use.fontawesome.com/releases/v5.4.1/js/all.js}" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>$2
+		<script defer src="${1:https://use.fontawesome.com/releases/v5.5.0/js/all.js}" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>$2
 	"""
   'Mapbox CSS CDN':
     'prefix': 'mapbox'
@@ -203,13 +203,13 @@
     'prefix': 'fontawesome'
     'body': """
 		// FontAwesome
-		link(rel="stylesheet", href="${1:https://use.fontawesome.com/releases/v5.2.0/css/all.css}", integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", crossorigin="anonymous")$2
+		link(rel="stylesheet", href="${1:https://use.fontawesome.com/releases/v5.5.0/css/all.css}", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")$2
 	"""
   'Fontawesome JS CDN':
     'prefix': 'fontawesomejs'
     'body': """
 		// FontAwesome
-		script(defer, src="${1:https://use.fontawesome.com/releases/v5.0.13/js/all.js}", integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe", crossorigin="anonymous")$2
+		script(defer, src="${1:https://use.fontawesome.com/releases/v5.5.0/js/all.js}", integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0", crossorigin="anonymous")$2
 	"""
   'Mapbox CSS CDN':
     'prefix': 'mapbox'
@@ -321,13 +321,13 @@
     'prefix': 'fontawesome'
     'body': """
 		<!-- FontAwesome -->
-		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.2.0/css/all.css}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">$2
+		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.5.0/css/all.css}" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">$2
 	"""
   'Fontawesome JS CDN':
     'prefix': 'fontawesomejs'
     'body': """
 		<!-- FontAwesome -->
-		<script defer src="${1:https://use.fontawesome.com/releases/v5.0.13/js/all.js}" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>$2
+		<script defer src="${1:https://use.fontawesome.com/releases/v5.5.0/js/all.js}" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>$2
 	"""
   'Mapbox CSS CDN':
     'prefix': 'mapbox'
@@ -446,13 +446,13 @@
     'prefix': 'fontawesome'
     'body': """
 		<!-- FontAwesome -->
-		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.2.0/css/all.css}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">$2
+		<link rel="stylesheet" href="${1:https://use.fontawesome.com/releases/v5.5.0/css/all.css}" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">$2
 	"""
   'Fontawesome JS CDN':
     'prefix': 'fontawesomejs'
     'body': """
 		<!-- FontAwesome -->
-		<script defer src="${1:https://use.fontawesome.com/releases/v5.0.13/js/all.js}" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>$2
+		<script defer src="${1:https://use.fontawesome.com/releases/v5.5.0/js/all.js}" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>$2
 	"""
   'Mapbox CSS CDN':
     'prefix': 'mapbox'
